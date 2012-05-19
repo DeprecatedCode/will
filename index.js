@@ -51,7 +51,8 @@ var _when = function(will, func, conditions, args, set) {
 	 * @author Nate Ferrero
 	 */
 	var _set = function(arg) {
-		return function(value) {console.log('Setting when args are', args);
+		return function(value) {
+			//console.log('Setting when args are', args);
 			args[arg] = value;
 			evaluate();
 		}
